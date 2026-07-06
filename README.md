@@ -27,6 +27,15 @@
 ### 2026 年 7 月 6 号添加
 
 #### xianyu110 - [Github](https://github.com/xianyu110)
+* :white_check_mark: [Image Prompt Generator](https://image-prompt-generator.com/)：免费 AI 图像提示词生成器和提示词库，支持多模型筛选和提示词生成 - [更多介绍](https://github.com/xianyu110/image-prompt-generator)
+
+#### xianyu110 - [Github](https://github.com/xianyu110)
+* :white_check_mark: [GrokTask](https://trygroktask.asia/)：基于 Grok AI 的智能任务自动化平台，支持定时任务、AI 自动执行、信息收集与分析
+
+#### zxcHolmes - [Github](https://github.com/zxcHolmes)
+* :white_check_mark: [HN 每日精选](https://pageslabs.com/zh)：每日更新 Hacker News 热门话题和讨论，支持多语言
+
+#### xianyu110 - [Github](https://github.com/xianyu110)
 * :white_check_mark: [GPTGeminiGrok.AI](https://trygrokai.asia/list/#/home)：Grok / SuperGrok 为主的 AI 模型服务入口，同时提供 GPTPlus、GeminiPro、ClaudeProMax 账号及 API 中转
 
 #### Felix - [Github](https://github.com/greek-zzf)
