@@ -26,6 +26,9 @@
 
 ### 2026 年 7 月 7 号添加
 
+#### xianyu110 - [Github](https://github.com/xianyu110)
+* :white_check_mark: [Gptimage2](https://gptimage2.asia/)：AI 图片生成工具
+
 #### Miles Devlin(海外)
 * :white_check_mark: [seedance 2.0 mini](https://seedancemini.online)：浏览器直出 AI 视频，文字/图片/音频多模态输入，30 秒内生成 HD 短片，无需安装
 
