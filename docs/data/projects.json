@@ -1,18 +1,35 @@
 {
-  "generatedAt": "2026-07-21T02:07:00.113Z",
-  "totalProjects": 2688,
+  "generatedAt": "2026-07-21T02:13:14.097Z",
+  "totalProjects": 2689,
   "stats": {
-    "live": 2243,
+    "live": 2244,
     "dev": 32,
     "closed": 413
   },
   "boards": {
-    "main": 1808,
+    "main": 1809,
     "programmer": 271,
     "game": 111,
     "archive": 498
   },
   "projects": [
+    {
+      "name": "usage",
+      "url": "https://github.com/aqua5230/usage",
+      "description": "把 Claude Code / Codex 的剩余额度和烧钱速度实时显示在菜单栏，全程不占用官方额度",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "aqua5230",
+        "city": "",
+        "github": "https://github.com/aqua5230",
+        "blog": "",
+        "extra": ""
+      }
+    },
     {
       "name": "双屏相机",
       "url": "https://apps.apple.com/cn/app/id6763209457",
@@ -3552,7 +3569,7 @@
     {
       "name": "AI-ROUTER",
       "url": "https://ai-router.dev/cn/",
-      "description": "面向开发者的第三方 ChatGPT API 中转服务，兼容 OpenAI 调用方式，可创建 API Key 并查看各 Key 用量；新用户可获总计 20U 体验额度，其中 5U 注册即用，15U 充值后等额解锁",
+      "description": "面向开发者的独立 ChatGPT API 中转服务，兼容 OpenAI 调用方式；使用个人 API Key，可查看各 Key 用量，当前模型及可用性以站内说明和 `/v1/models` 为准；非 OpenAI 官方服务",
       "status": "live",
       "moreInfoUrl": "",
       "moreInfoLabel": "",
