@@ -10,6 +10,9 @@ on:
       - 'pages/README-2018-2020.md'
       - 'scripts/build-site.js'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
