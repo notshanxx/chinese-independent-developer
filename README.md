@@ -23,15 +23,13 @@
 | :clock8: | :white_check_mark: | :x: |
 
 ## 3. 项目列表
-### 2026 年 7 月 22 号添加
+### 2026 年 7 月 21 号添加
 
-#### Voor AI
+#### weidacn - [Github](https://github.com/weidacn)
 * :white_check_mark: [Voor AI](https://voor.ai)：浏览器端 AI 创作平台，支持视频、图片和音频生成、编辑与工作流协作，统一管理共享积分
 * :white_check_mark: [Krea 2 AI](https://krea2.org)：专注 Krea 2 的 AI 图片工作台，支持多种生成规格、风格探索与快速迭代
 * :white_check_mark: [Seedance 2.5 AI](https://seedance2-5ai.im)：Seedance 2.5 AI 视频工作台，支持文字生视频、图片生视频和参考图生视频
 * :white_check_mark: [Seedream 5.0 Pro](https://seedream5-pro.im)：多模型 AI 图片工作台，支持文字生图、图片生图、复杂布局与多语言文字编辑
-
-### 2026 年 7 月 21 号添加
 
 #### DevEloLin - [Github](https://github.com/DevEloLin)
 * :white_check_mark: [EloLin](https://elolin.com)：一个人做的产品工作室主页，一处浏览我做的全部产品，并用同一个账号登录所有产品
