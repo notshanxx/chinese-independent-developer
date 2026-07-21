@@ -1,3 +1,5 @@
+[![English](https://img.shields.io/badge/English-Translate-blue)](https://translate.google.com/translate?sl=zh-CN&tl=en&u=https://github.com/1c7/chinese-independent-developer/blob/master/pages/README-Programmer-Edition.md)
+
 ## 中国独立开发者项目列表（程序员版）
 
 [主板面点这里](https://github.com/1c7/chinese-independent-developer/)

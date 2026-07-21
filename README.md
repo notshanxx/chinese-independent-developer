@@ -1,3 +1,5 @@
+[![English](https://img.shields.io/badge/English-Translate-blue)](https://translate.google.com/translate?sl=zh-CN&tl=en&u=https://github.com/1c7/chinese-independent-developer/blob/master/README.md)
+
 ## 中国独立开发者项目列表
 聚合所有中国独立开发者的项目
 

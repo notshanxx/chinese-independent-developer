@@ -1,3 +1,5 @@
+[![English](https://img.shields.io/badge/English-Translate-blue)](https://translate.google.com/translate?sl=zh-CN&tl=en&u=https://github.com/1c7/chinese-independent-developer/blob/master/pages/README-Game.md)
+
 ## 游戏版面 - 中国独立开发者项目列表
 
 本版面放的都是游戏，起始于2025年1月4号
