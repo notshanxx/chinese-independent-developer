@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinese Independent Developer Projects</title>
+  <meta name="description" content="A curated list of projects by Chinese independent developers">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Chinese Independent Developer Projects</h1>
+    <p class="subtitle" id="stats"></p>
+  </header>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
+    </div>
+    <div class="filters">
+      <div class="filter-group">
+        <label>Board</label>
+        <div class="filter-buttons" id="board-filters">
+          <button class="active" data-board="all">All</button>
+          <button data-board="main">Main</button>
+          <button data-board="programmer">Programmer</button>
+          <button data-board="game">Game</button>
+          <button data-board="archive">Archive</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <label>Status</label>
+        <div class="filter-buttons" id="status-filters">
+          <button class="active" data-status="all">All</button>
+          <button data-status="live">Live</button>
+          <button data-status="dev">In Dev</button>
+          <button data-status="closed">Closed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-info" id="results-info"></div>
+
+  <div class="grid" id="project-grid"></div>
+
+  <div class="loading" id="loading">Loading projects...</div>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Data from <a href="https://github.com/1c7/chinese-independent-developer" target="_blank">1c7/chinese-independent-developer</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
