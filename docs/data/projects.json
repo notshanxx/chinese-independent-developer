@@ -1,18 +1,341 @@
 {
-  "generatedAt": "2026-07-21T02:13:14.097Z",
-  "totalProjects": 2689,
+  "generatedAt": "2026-07-22T12:03:52.469Z",
+  "totalProjects": 2711,
   "stats": {
-    "live": 2244,
+    "live": 2265,
     "dev": 32,
-    "closed": 413
+    "closed": 414
   },
   "boards": {
-    "main": 1809,
-    "programmer": 271,
+    "main": 1827,
+    "programmer": 275,
     "game": 111,
     "archive": 498
   },
   "projects": [
+    {
+      "name": "TomlJump",
+      "url": "https://github.com/hongshuo-wang/TomlJump",
+      "description": "TOML 导航插件，可在 TOML 配置、项目文件和 Go、Python、Java、TypeScript、JavaScript 源码声明之间双向跳转，支持 JetBrains IDE、VS Code 及兼容编辑器",
+      "status": "live",
+      "moreInfoUrl": "https://github.com/hongshuo-wang/TomlJump/blob/main/README.zh-CN.md",
+      "moreInfoLabel": "更多介绍",
+      "board": "programmer",
+      "date": "2026-07-22",
+      "author": {
+        "name": "hongshuo-wang",
+        "city": "",
+        "github": "https://github.com/hongshuo-wang",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "RailNet Tester",
+      "url": "https://play.google.com/store/apps/details?id=com.xg.railnettester",
+      "description": "高铁移动网络质量记录仪，高速移动环境下进行 TCP 测试 + GPS 同步连续采集并形成图表",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "cobola",
+        "city": "",
+        "github": "https://github.com/cobola",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "0trace",
+      "url": "https://0trace.org",
+      "description": "纯 P2P 浏览器端对端聊天与文件传输，无服务器中转、无需注册、打开即用",
+      "status": "live",
+      "moreInfoUrl": "https://github.com/momo2029/0trace",
+      "moreInfoLabel": "GitHub",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "cobola",
+        "city": "",
+        "github": "https://github.com/cobola",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Voor AI",
+      "url": "https://voor.ai",
+      "description": "浏览器端 AI 创作平台，支持视频、图片和音频生成、编辑与工作流协作，统一管理共享积分",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "weidacn",
+        "city": "",
+        "github": "https://github.com/weidacn",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Krea 2 AI",
+      "url": "https://krea2.org",
+      "description": "专注 Krea 2 的 AI 图片工作台，支持多种生成规格、风格探索与快速迭代",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "weidacn",
+        "city": "",
+        "github": "https://github.com/weidacn",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Seedance 2.5 AI",
+      "url": "https://seedance2-5ai.im",
+      "description": "Seedance 2.5 AI 视频工作台，支持文字生视频、图片生视频和参考图生视频",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "weidacn",
+        "city": "",
+        "github": "https://github.com/weidacn",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Seedream 5.0 Pro",
+      "url": "https://seedream5-pro.im",
+      "description": "多模型 AI 图片工作台，支持文字生图、图片生图、复杂布局与多语言文字编辑",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "weidacn",
+        "city": "",
+        "github": "https://github.com/weidacn",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "EloLin",
+      "url": "https://elolin.com",
+      "description": "一个人做的产品工作室主页，一处浏览我做的全部产品，并用同一个账号登录所有产品",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "PhotoAI",
+      "url": "https://photoai.elolin.com",
+      "description": "上传一张自拍，选个风格一键生成证件照、头像、宠物照或角色立绘，全程不用写提示词，照片当天自动删除",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "EloLin Domains",
+      "url": "https://domains.elolin.com",
+      "description": "免费领一个属于自己的子域名，并自助管理它的 DNS 解析，几秒生效",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Zivoe",
+      "url": "https://zivoe.elolin.com",
+      "description": "面向工业设计的桌面工具，用一张参考图把模糊想法变成产品概念主图和三视图，启发灵感、也方便和工厂沟通",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Lumi & Friends iOS App Finder",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-pay-once-iphone-app-finder.html",
+      "description": "按用途、隐私和付费方式查找 28 款已上架 iPhone/iPad App，覆盖学习、效率、照片、旅行与健康，逐款直达 App Store；支持 Apple 官方 50 个本地化区域",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "alice51849",
+        "city": "",
+        "github": "https://github.com/alice51849",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Vibe Coding Atlas",
+      "url": "https://vibecoding.aicake.io",
+      "description": "中国独立开发者项目列表网页版，每日刷新 Markdown 清单生成可搜索筛选的静态目录，并补充公开 GitHub Stars",
+      "status": "live",
+      "moreInfoUrl": "https://github.com/xiaomingio/vibe-coding-atlas",
+      "moreInfoLabel": "GitHub 仓库",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "小明",
+        "city": "",
+        "github": "https://github.com/xiaomingio",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "FocusLens-屏幕截图聚焦编辑器",
+      "url": "https://getfocuslens.com/",
+      "description": "将你的图片局部放置放大镜进行放大显示，聚焦以引起注意",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "Mil0R",
+        "city": "北京",
+        "github": "https://github.com/Mil0R",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Pulse",
+      "url": "https://www.pulseticker.app/",
+      "description": "macOS 原生菜单栏行情工具，一眼查看美股、港股、A 股、加密货币、指数和 ETF，支持自选与持仓盈亏，免费开源",
+      "status": "live",
+      "moreInfoUrl": "https://github.com/fatwang2/Pulse",
+      "moreInfoLabel": "查看仓库",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "fatwang2",
+        "city": "",
+        "github": "https://github.com/fatwang2",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "一叶知秋",
+      "url": "https://onetoken.phaeris.xyz",
+      "description": "根据[最新论文](https://arxiv.org/abs/2607.10252)开发的中转 API 检测工具，担心中转站偷偷换成更便宜的模型？填上对方地址，我们只问它几次「随便说一个数」这类极短问题—— 每次回答大约只花 1 个输出 token，再对照已知真模型的回答习惯，判断像不像。 你的 API Key 只用于当场检测，我们不会记录、不会保存",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "Phaeris",
+        "city": "",
+        "github": "https://github.com/PhaerisWakfu/OneTokenIsEnough",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "芦苇-发现好内容",
+      "url": "https://apps.apple.com/cn/app/%E8%8A%A6%E8%8B%87-%E5%8F%91%E7%8E%B0%E5%A5%BD%E5%86%85%E5%AE%B9/id6756805406",
+      "description": "探索优质信息源，连接 RSS 订阅与内容发现",
+      "status": "live",
+      "moreInfoUrl": "https://reeddaily.com/",
+      "moreInfoLabel": "更多介绍",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "MarthaHuang",
+        "city": "北京",
+        "github": "https://github.com/Amybiubiu",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "diffMaster",
+      "url": "https://diff.boyeye.com",
+      "description": "支持多格式的文档比对",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "毛小蒙",
+        "city": "杭州",
+        "github": "https://github.com/maoxiaomeng2021",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "PlotCraft",
+      "url": "https://github.com/jaychouchannel/PlotCraft",
+      "description": "科研人专用，用自然语言描述图表，AI 自动生成 Nature/Cell 级科研论文矢量图（SVG），支持 8 种图表模板，本地沙箱渲染",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "main",
+      "date": "2026-07-21",
+      "author": {
+        "name": "jaychouchannel",
+        "city": "",
+        "github": "https://github.com/jaychouchannel",
+        "blog": "",
+        "extra": ""
+      }
+    },
     {
       "name": "usage",
       "url": "https://github.com/aqua5230/usage",
@@ -26,6 +349,57 @@
         "name": "aqua5230",
         "city": "",
         "github": "https://github.com/aqua5230",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "mv3migrate",
+      "url": "https://mv3migrate.elolin.com",
+      "description": "一条命令把 Chrome 扩展从 Manifest V2 迁到 V3——自动扫描、代码改写、生成可读的迁移报告",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "programmer",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "Onrix AI",
+      "url": "https://docs.getarriveready.com",
+      "description": "OpenAI 兼容的对话与生图 API，把现有 OpenAI SDK 的 base URL 和 key 一换就能用",
+      "status": "live",
+      "moreInfoUrl": "",
+      "moreInfoLabel": "",
+      "board": "programmer",
+      "date": "2026-07-21",
+      "author": {
+        "name": "DevEloLin",
+        "city": "",
+        "github": "https://github.com/DevEloLin",
+        "blog": "",
+        "extra": ""
+      }
+    },
+    {
+      "name": "CodeScope",
+      "url": "https://github.com/Timwood0x10/CodeScope",
+      "description": "代码图引擎 + MCP 协议工具链，让 AI 验证代码是否符合声明，支持 C/C++、Rust、Python、Go、JS/TS、Java 等 8 种语言，提供 40+ MCP 工具，可接入 Claude Desktop / Cursor",
+      "status": "live",
+      "moreInfoUrl": "https://github.com/Timwood0x10/CodeScope/releases/tag/v0.2.3",
+      "moreInfoLabel": "Release",
+      "board": "programmer",
+      "date": "2026-07-21",
+      "author": {
+        "name": "Tim",
+        "city": "",
+        "github": "https://github.com/Timwood0x10",
         "blog": "",
         "extra": ""
       }
@@ -2788,7 +3162,7 @@
       "name": "OmniScope-rs",
       "url": "https://github.com/Timwood0x10/OmniScope-rs",
       "description": "基于 LLVM IR 的 Rust 实现跨语言 FFI 静态分析工具，能自动检测 Rust/C/Go/Python/Java 等语言边界上的内存所有权错误、资源泄漏、double-free 等安全问题。可**有效辅助**开发者定位FFI潜在bug。",
-      "status": "live",
+      "status": "closed",
       "moreInfoUrl": "https://timwood0x10.github.io/myblog/log/omniscope-rs/01-why-omniscope/",
       "moreInfoLabel": "技术架构拆解",
       "board": "programmer",
