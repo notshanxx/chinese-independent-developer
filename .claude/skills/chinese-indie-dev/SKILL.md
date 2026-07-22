@@ -7,7 +7,7 @@ description: >
   当用户说"处理提交"、"处理 issue"、"跑一下列表"时使用。
 metadata:
   author: 1c7
-  version: "1.7"
+  version: "1.8"
   lang: zh-CN
 allowed-tools:
   - Bash
@@ -142,29 +142,51 @@ gh api "repos/1c7/chinese-independent-developer/pulls?state=open&per_page=50" \
       repos/1c7/chinese-independent-developer/issues/comments/$PR_COMMENT_ID \
       -f body="$CLEAN_BODY"
     ```
-  - 如果合并失败（如 merge conflict）：**由我们自己解决冲突并合并，绝不要求提交者 rebase**。步骤：
-    1. 拉取 PR 分支到本地并尝试合并进 master：
+  - 如果合并失败（如 merge conflict）：**由我们自己解决冲突并合并，绝不要求提交者 rebase**。优先尝试真正合并（让 PR 显示为 Merged），只有技术上不可行时才降级为「手动合并进 master + 关闭 PR」。步骤：
+    1. 先查该 PR 是否允许维护者编辑分支：
+       ```bash
+       MAINTAINER_CAN_MODIFY=$(gh api repos/1c7/chinese-independent-developer/pulls/<number> | jq -r '.maintainer_can_modify')
+       ```
+    2. **如果 `MAINTAINER_CAN_MODIFY` 为 `true`**（优先路径，能让 PR 真正显示为 Merged）：
+       ```bash
+       HEAD_REF=$(gh api repos/1c7/chinese-independent-developer/pulls/<number> | jq -r '.head.ref')
+       HEAD_REPO_URL=$(gh api repos/1c7/chinese-independent-developer/pulls/<number> | jq -r '.head.repo.clone_url')
+
+       git fetch origin master
+       git fetch origin pull/<number>/head:pr-<number>
+       git checkout pr-<number>
+       git merge origin/master --no-edit
+       ```
+       如果出现冲突：**手动编辑冲突文件**，保留双方新增的条目（不要删除任何一方已有的行），冲突标记全部清理干净，然后：
+       ```bash
+       git add <冲突文件>
+       git commit --no-edit
+       git push "$HEAD_REPO_URL" "pr-<number>:$HEAD_REF"
+       gh pr merge <number> --merge
+       ```
+       （用 `--merge` 而非 `--squash`，保留贡献者原始 commit 的作者信息）推送后如果因为权限或分支保护等原因失败，视为该路径不可行，降级到步骤 3。合并成功则按下面「合并成功」的致谢评论流程处理，PR 会正常显示为 Merged。
+    3. **如果 `MAINTAINER_CAN_MODIFY` 为 `false`**（贡献者未勾选"允许维护者编辑"，没有权限推送到其分支，只能走这条兜底路径），或步骤 2 推送失败：
        ```bash
        git fetch origin master
        git fetch origin pull/<number>/head:pr-<number>
        git checkout master && git reset --hard origin/master
        git merge pr-<number> --no-ff -m "合并 PR #<number>：<项目名>"
        ```
-    2. 如果出现冲突：冲突几乎必然是 README 里同一个日期区块被多个 PR 同时插入条目导致的。**手动编辑冲突文件**，保留双方新增的条目（不要删除任何一方已有的行），冲突标记全部清理干净，然后：
+       如果出现冲突：冲突几乎必然是 README 里同一个日期区块被多个 PR 同时插入条目导致的。**手动编辑冲突文件**，保留双方新增的条目（不要删除任何一方已有的行），冲突标记全部清理干净，然后：
        ```bash
        git add <冲突文件>
        git commit --no-edit
        ```
-    3. 校验 README 格式无误后推送：
+       校验 README 格式无误后推送：
        ```bash
        git push origin master
        ```
-    4. 因为贡献者的分支落后于 master、GitHub 无法用按钮直接标记该 PR 为 merged，所以改为关闭 PR 并致谢。**评论正文不要提冲突、不要提手动合并这类处理过程细节**，提交者不需要知道内部是怎么处理的，只需要知道结果：
+       因为贡献者的分支落后于 master、GitHub 无法用按钮直接标记该 PR 为 merged，所以改为关闭 PR 并致谢。**评论正文不要提冲突、不要提手动合并这类处理过程细节**，提交者不需要知道内部是怎么处理的，只需要知道结果：
        ```bash
        CLEAN_BODY="@<提交者用户名> 感谢提交，你的产品 <产品名> 已添加到 <主版面/程序员版面/游戏版面>！"
        gh pr close <number> --comment "$CLEAN_BODY"
        ```
-    5. 如果冲突内容复杂到无法安全判断该保留什么（例如冲突不只是新增条目，而是修改了已有内容的结构），**不要瞎猜、不要删除任何已有内容**，改为在 PR 里说明具体冲突原因并保持 PR 打开，等待人工介入；但这应是极少数情况，绝大多数「新增条目」型冲突都应该自动解决。
+    4. 如果冲突内容复杂到无法安全判断该保留什么（例如冲突不只是新增条目，而是修改了已有内容的结构），**不要瞎猜、不要删除任何已有内容**，改为在 PR 里说明具体冲突原因并保持 PR 打开，等待人工介入；但这应是极少数情况，绝大多数「新增条目」型冲突都应该自动解决。
   - **不允许**的做法：连续多次发送「请 rebase / 请解决冲突后重新提交」这类要求人类提交者自己解决冲突的评论。冲突处理是我们的责任，不是提交者的。
 - **垃圾广告、无关内容** → 直接关闭：`gh pr close <number>`
 
