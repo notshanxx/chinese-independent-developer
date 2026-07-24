@@ -1,8 +1,11 @@
-[![English](https://img.shields.io/badge/English-Translate-blue)](https://translate.google.com/translate?sl=zh-CN&tl=en&u=https://github.com/1c7/chinese-independent-developer/blob/master/pages/README-Game.md)
-
 ## 游戏版面 - 中国独立开发者项目列表
 
 本版面放的都是游戏，起始于2025年1月4号
+
+### 2026 年 7 月 22 号添加
+
+#### xiaosongcai(泉州) - [Github](https://github.com/songxiaoc)
+* :white_check_mark: [Palworld Breeding Calculator](https://palworldbreeding.org/)：帮助 Palworld 玩家查询 Pal 配种组合和规划繁殖路线
 
 ### 2026 年 7 月 18 号添加
 
