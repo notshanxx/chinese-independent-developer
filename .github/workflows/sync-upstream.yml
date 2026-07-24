@@ -1,0 +1,51 @@
+name: Sync upstream and rebuild site
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/1c7/chinese-independent-developer.git || true
+
+      - name: Fetch upstream
+        run: git fetch upstream master
+
+      - name: Sync README .md files from upstream
+        run: |
+          git checkout upstream/master -- \
+            README.md \
+            pages/README-Programmer-Edition.md \
+            pages/README-Game.md
+
+      - name: Rebuild projects.json
+        run: node scripts/build-site.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md pages/README-Programmer-Edition.md pages/README-Game.md docs/data/projects.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "sync: update READMEs from upstream and rebuild projects.json"
+            git pull --rebase origin master
+            git push origin master
+          fi
